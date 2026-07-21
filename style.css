@@ -1572,6 +1572,49 @@ button {
     line-height: 1.8;
 }
 
+.article-body ul {
+    display: grid;
+    gap: 10px;
+    margin: 12px 0 8px;
+    padding-left: 22px;
+}
+
+.article-body li {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.article-body .article-summary {
+    background: rgba(0, 217, 255, 0.08);
+    border-color: rgba(0, 217, 255, 0.26);
+    border-radius: 18px;
+    padding: 26px;
+}
+
+.article-summary ul {
+    margin-bottom: 0;
+}
+
+.article-comparison {
+    margin: 20px 0 30px;
+}
+
+.article-comparison .comparison-row {
+    grid-template-columns: 1fr 1.1fr 1.2fr 1.6fr;
+}
+
+.article-comparison .comparison-row span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+    .article-comparison .comparison-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 .article-body p a,
 .article-body li a,
 .article-content p a,
